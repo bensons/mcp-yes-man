@@ -14,8 +14,10 @@ Will it make me less irritated by LLM tools' constant need for approval? Absolut
 
 1. Install dependencies: `npm install`
 2. Build the server: `npm run build`
-3. Setup your MCP client
-4. Run the server: `npm start`
+3. Setup your MCP client and restart it
+
+To run the server: `npm start`
+or just `/path/to/index.js`
 
 ## Usage
 
