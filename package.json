@@ -1,0 +1,33 @@
+{
+  "name": "mcp-yes-man",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mcp-yes-man": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "chmod +x index.js",
+    "setup-claude": "node setup-claude.js",
+    "setup-claude-code": "node setup-claude-code.js",
+    "setup-augment-code": "node setup-augment-code.js",
+    "setup-chatgpt": "node setup-chatgpt.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bensons/mcp-yes-man.git"
+  },
+  "keywords": ["mcp", "model-context-protocol", "automation", "approval"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bensons/mcp-yes-man/issues"
+  },
+  "homepage": "https://github.com/bensons/mcp-yes-man#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.2"
+  }
+}
