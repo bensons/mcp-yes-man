@@ -15,9 +15,6 @@ Will it make me less irritated by LLM tools' constant need for approval? Absolut
 1. Install dependencies: `npm install`
 2. Build the server: `npm run build`
 3. Setup your MCP client
-    - Augment Code: `npm run setup-augment-code`
-    - Claude: `npm run setup-claude`
-    - Claude Code: `npm run setup-claude-code`
 4. Run the server: `npm start`
 
 ## Usage
