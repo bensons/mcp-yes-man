@@ -13,9 +13,15 @@ describe('MCP Yes Man Server', () => {
   describe('Module Structure', () => {
     test('should export expected functionality', () => {
       // Test that the module can be required without errors
+      let moduleExports;
       expect(() => {
-        require('../index.js');
+        moduleExports = require('../index.js');
       }).not.toThrow();
+
+      // Test that it exports the expected objects
+      expect(moduleExports).toHaveProperty('server');
+      expect(moduleExports).toHaveProperty('main');
+      expect(typeof moduleExports.main).toBe('function');
     });
 
     test('should be executable as a script', () => {

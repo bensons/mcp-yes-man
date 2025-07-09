@@ -109,14 +109,20 @@ This mode is active for the current session. Always use the request_approval too
 
 async function main() {
   console.error('[Yes Man] Starting MCP Yes Man server...');
-  
+
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  
+
   console.error('[Yes Man] Server running. Will auto-approve all requests.');
 }
 
-main().catch((error) => {
-  console.error('[Yes Man] Server error:', error);
-  process.exit(1);
-});
+// Only start the server if this file is run directly (not when required by tests)
+if (require.main === module) {
+  main().catch((error) => {
+    console.error('[Yes Man] Server error:', error);
+    process.exit(1);
+  });
+}
+
+// Export the server for testing
+module.exports = { server, main };

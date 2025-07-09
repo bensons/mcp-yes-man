@@ -39,14 +39,10 @@
     "jest": "^30.0.4"
   },
   "overrides": {
-    "glob": "^10.4.5",
-    "inflight": "npm:@isaacs/inflight@^1.0.6"
+    "glob": "^10.4.5"
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"],
-    "collectCoverage": true,
-    "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "html"]
+    "testMatch": ["**/tests/**/*.test.js"]
   }
 }
