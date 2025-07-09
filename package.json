@@ -1,6 +1,6 @@
 {
   "name": "mcp-yes-man",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -43,6 +43,8 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"]
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
   }
 }
