@@ -36,7 +36,11 @@
     "@modelcontextprotocol/sdk": "^1.13.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^30.0.4"
+  },
+  "overrides": {
+    "glob": "^10.4.5",
+    "inflight": "npm:@isaacs/inflight@^1.0.6"
   },
   "jest": {
     "testEnvironment": "node",
