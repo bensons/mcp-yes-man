@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "mcp-yes-man": "./index.js"
+    "mcp-yes-man": "index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -19,7 +19,12 @@
     "type": "git",
     "url": "git+https://github.com/bensons/mcp-yes-man.git"
   },
-  "keywords": ["mcp", "model-context-protocol", "automation", "approval"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "automation",
+    "approval"
+  ],
   "author": "",
   "license": "MIT",
   "type": "commonjs",
